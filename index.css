@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #23242a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.style_container{
+    height: 410px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 20;
+}
+.style_container::before{
+    content: "";
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    background: linear-gradient(0deg,transparent,transparent,aqua,aqua,aqua);
+    height: 400px;
+    width: 350px;
+    animation: animate 6s linear infinite;
+    transition-duration: 0.5s;
+    transform-origin: bottom right;
+}
+.style_container::after{
+    content: "";
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    background: linear-gradient(0deg,transparent,transparent,aqua,aqua,aqua);
+    height: 400px;
+    width: 350px;
+    animation: animate 6s linear infinite;
+    transition-duration: 0.5s;
+    transform-origin: bottom right;
+    animation-delay: -3s;
+}
+
+
+.style_container::after{
+    content: "";
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    background: linear-gradient(0deg,transparent,transparent,aqua,aqua,aqua);
+    height: 400px;
+    width: 350px;
+    animation: animate 6s linear infinite;
+    transition-duration: 0.5s;
+    transform-origin: bottom right;
+    animation-delay: -3s;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.calculator{
+    background-color: #222;
+    height: 98%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    inset: 4px;
+    position: absolute;
+    z-index: 20;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.buttons button{
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 9px 13px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    box-sizing: none;
+}
+
+#input{
+    padding: 10px;
+    font-size: 22px;
+    border: 2px solid white;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border-radius: 8px;
+    margin: 5px;
+}
+.buttons :nth-child(17){
+    border-radius: 5px;
+    background-color: #3696f5;
+    width: 100%;
+    padding: 4px;
+}
+.buttons :nth-child(17):active{
+    opacity: 0.9;
+}
+.buttons :nth-child(13){
+    background-color: orangered;
+}
+.buttons button :active{
+    opacity: 0.5;
+}
+

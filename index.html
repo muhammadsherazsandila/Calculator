@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="style_container">
+        <div class="calculator">
+            <div class="style_line"></div>
+            <input type="text" name="input" id="input" placeholder="Sandila Programming">
+            <div class="buttons">
+                <button class="btn" onclick="appendToResult('7')">7</button>
+                <button class="btn" onclick="appendToResult('8')">8</button>
+                <button class="btn" onclick="appendToResult('9')">9</button>
+                <button class="btn" onclick="appendToResult('/')">/</button>
+                <button class="btn" onclick="appendToResult('4')">4</button>
+                <button class="btn" onclick="appendToResult('5')">5</button>
+                <button class="btn" onclick="appendToResult('6')">6</button>
+                <button class="btn" onclick="appendToResult('*')">x</button>
+                <button class="btn" onclick="appendToResult('1')">1</button>
+                <button class="btn" onclick="appendToResult('2')">2</button>
+                <button class="btn" onclick="appendToResult('3')">3</button>
+                <button class="btn" onclick="appendToResult('-')">-</button>
+                <button class="btn" onclick="clear_result()">Cl</button>
+                <button class="btn" onclick="appendToResult('0')">0</button>
+                <button class="btn" onclick="appendToResult('.')">.</button>
+                <button class="btn" onclick="appendToResult('+')">+</button>
+                <button class="btn" onclick="evaluate_result()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
